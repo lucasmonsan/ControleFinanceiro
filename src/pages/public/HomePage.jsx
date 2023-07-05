@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
-import { PageContainer } from "../styles/Containers";
+import { PageContainer } from "../../components/styles/Containers";
 
-import logo from "../assets/logo.svg";
+import logo from "../../assets/logo.svg";
 
 export const HomePage = () => {  
   return (    
@@ -19,23 +19,16 @@ export const HomePage = () => {
   )
 }
 
-/*********************/
+/*************************************/
 const Img = styled.img`
   min-height: 8rem;
   max-height: 8rem;
   margin-bottom: 4rem;
 `
 const Btn = styled.button`
-  width: 100%;
   max-width: 15rem;
-  height: 2.75rem;
-  margin-bottom: 0.75rem;  
-  font-weight: 700;  
-  border-radius: var(--Radius);
-  border: solid 3px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;  
-  transition: all 0.25s ease-in-out;
-
+  margin-bottom: 0.75rem; 
+  
   &&.login {
     color: ${props => props.theme.color05};
     background-color: ${props => props.theme.color01};

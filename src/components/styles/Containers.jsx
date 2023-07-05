@@ -9,5 +9,7 @@ export const PageContainer = styled.main`
   width: 100%;
   max-width: var(--Max-Width);
   min-height: 100dvh;
+  
+  color: ${props => props.theme.color05};
   background-color: ${props => props.theme.color02};
 `
